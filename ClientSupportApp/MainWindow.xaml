@@ -1,0 +1,39 @@
+﻿<Window x:Class="ClientSupportApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Главное меню" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Background="#f0f0f0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Панель пользователя -->
+        <Border Background="#dddddd" Padding="10" Grid.Row="0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock x:Name="UserInfoTextBlock"
+                           FontSize="16"
+                           Foreground="#333"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Главное меню -->
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <TextBlock Text="Учёт обращений в клиентскую службу"
+                       FontSize="28"
+                       FontWeight="Bold"
+                       Foreground="#333"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,40"/>
+
+            <Button x:Name="ClientRequestsButton" Content="Обращения клиентов" Width="250" Height="50" Margin="0,0,0,10" Click="OpenClientRequests"/>
+            <Button x:Name="AchievementsButton" Content="Достижения" Width="250" Height="50" Margin="0,0,0,10" Click="OpenAchievements"/>
+            <Button x:Name="AttendanceButton" Content="Учёт посещаемости" Width="250" Height="50" Margin="0,0,0,10" Click="OpenAttendance"/>
+            <Button x:Name="AnalyticsButton" Content="Аналитика" Width="250" Height="50" Click="OpenAnalytics"/>
+
+
+        </StackPanel>
+    </Grid>
+</Window>
