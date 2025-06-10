@@ -14,13 +14,6 @@
 | Аутентификация | Windows Auth/SQL Auth    |
 
 ## 3. Диаграмма компонентов
-@startuml
-package "ClientServiceApp" {
-  [WPF-UI] as ui
-  [ADO.NET] as ado
-  [SQL Server] as db
-}
-ui --> ado: Запросы данных
-ado --> db: SQL-запросы
-@enduml
+![image](https://github.com/user-attachments/assets/b56369e3-2129-417d-b67b-fdba693719f7)
+
 
