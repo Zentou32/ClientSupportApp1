@@ -6,21 +6,4 @@
 - **Данные**: ADO.NET репозитории  
 
 ## 2. Схема данных
-```plantuml
-@startuml
-entity Users {
-  +Id [PK]
-  --
-  Login
-  Password
-  Role
-}
-
-entity Achievements {
-  +Id [PK]
-  --
-  UserId [FK]
-  CompetitionName
-  Points
-}
-@enduml
+![image](https://github.com/user-attachments/assets/511e3b74-93c8-48f9-aae7-36bf325ba9c4)
