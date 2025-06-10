@@ -7,4 +7,4 @@
    - Руководство → Ввод данных → Система
 
 ## 2. Диаграмма последовательности
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/518f7749-dae4-4421-9aaa-59d78a5d0f59)
