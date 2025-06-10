@@ -30,7 +30,6 @@ ClientServiceApp/
 
 
 ## 4. Диаграмма компонентов
-```plantuml
 @startuml
 package "ClientServiceApp" {
   [WPF-UI] as ui
@@ -40,3 +39,4 @@ package "ClientServiceApp" {
 ui --> ado: Запросы данных
 ado --> db: SQL-запросы
 @enduml
+
