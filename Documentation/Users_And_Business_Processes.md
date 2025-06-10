@@ -19,7 +19,7 @@
 2. Система возвращает информацию из БД.
 
 ## 3. Диаграмма потока данных
-```plantuml
+
 @startuml
 participant "Клиент" as client
 participant "Бэкенд" as backend
@@ -30,5 +30,3 @@ backend -> db: Записать в БД
 db --> backend: Подтверждение
 backend --> client: Уведомление об успехе
 @enduml
-```
-```
