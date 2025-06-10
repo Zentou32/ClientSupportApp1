@@ -18,15 +18,4 @@
 1. Клиент запрашивает статус по ID обращения.
 2. Система возвращает информацию из БД.
 
-## 3. Диаграмма потока данных
 
-@startuml
-participant "Клиент" as client
-participant "Бэкенд" as backend
-participant "База данных" as db
-
-client -> backend: Отправить обращение
-backend -> db: Записать в БД
-db --> backend: Подтверждение
-backend --> client: Уведомление об успехе
-@enduml
