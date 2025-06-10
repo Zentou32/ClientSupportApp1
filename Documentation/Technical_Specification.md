@@ -15,18 +15,34 @@
 
 ## 3. Структура проекта
 ClientServiceApp/
-├── Models/ # Сущности БД
-│ ├── User.cs
-│ ├── Achievement.cs
-├── Repositories/ # Работа с данными
-│ ├── UserRepository.cs
-│ ├── AchievementRepository.cs
-├── Services/ # Бизнес-логика
-│ └── AuthService.cs
-├── Views/ # Окна приложения
-│ ├── LoginWindow.xaml
-│ └── MainWindow.xaml
-└── App.config # Конфигурация
+│
+├── **Models/**               # Модели данных
+│   ├── User.cs               # Пользователи системы
+│   ├── Achievement.cs        # Достижения сотрудников
+│   └── Attendance.cs         # Учёт посещаемости
+│
+├── **Repositories/**         # Работа с базой данных
+│   ├── UserRepository.cs     # Операции с пользователями
+│   ├── AchievementRepository.cs
+│   └── AttendanceRepository.cs
+│
+├── **Services/**             # Бизнес-логика
+│   ├── AuthService.cs        # Аутентификация
+│   └── ReportService.cs      # Генерация отчётов
+│
+├── **Views/**                # Окна приложения
+│   ├── LoginWindow.xaml      # Окно авторизации
+│   ├── MainWindow.xaml       # Главное окно
+│   └── Achievements/         # Подраздел достижений
+│       ├── AddWindow.xaml
+│       └── EditWindow.xaml
+│
+├── **Utilities/**            # Вспомогательные классы
+│   ├── Validators.cs         # Валидация данных
+│   └── Converters.cs         # Конвертеры для WPF
+│
+├── App.config                # Конфигурация приложения
+└── App.xaml                  # Точка входа
 
 
 ## 4. Диаграмма компонентов
